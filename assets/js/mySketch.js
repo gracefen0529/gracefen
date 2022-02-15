@@ -6,8 +6,8 @@ let arcSize = 200;
 function setup(){
   createCanvas(windowWidth,800)
 	//設定麥克風接收音源
-	mic = new p5.AudioIn()
-	mic.start()	
+	// mic = new p5.AudioIn()
+	// mic.start()	
 }
 
 function draw(){
@@ -21,11 +21,11 @@ function draw(){
 	crl1(0,0)
 	
 }
-var lerpeMicLevel = 0 //micLevel剛開始是0
+// var lerpeMicLevel = 0 //micLevel剛開始是0
 function crl1(){
 	noFill();
 	stroke(20);
-	var micLevel = mic.getLevel()  //取得當下音量
+	// var micLevel = mic.getLevel()  //取得當下音量
 	for(let y=+arcSize/2; y<height*2+arcSize;y+=yStep){
 		let alpha = (frameCount*5);
 		sw = map(sin(radians(y+alpha)),-1,1,2,yStep);

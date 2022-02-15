@@ -9,7 +9,7 @@ header ='<header class="nk-header">\
             <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">\
                 <li><a href="work.html">設計專案</a></li>\
                 <li><a href="about.html">關於我</a></li>\
-                <li class="dw-bt"><a href="blog.html">下載履歷</a></li>\
+                <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
             </ul>\
             <ul class="nk-nav nk-nav-right nk-nav-icons">\
                 <li class="single-icon hidden-lg-up">\

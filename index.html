@@ -57,10 +57,7 @@
 * {
     border: 1px solid blue;
 }
-.nk-header-title .nk-header-table-cell {
-    width: 100%;
-    border: 1px solid red;
-}
+
 
 @media screen and (max-width:768px) {
     .row {
@@ -70,19 +67,23 @@
 
 @media screen and (max-width:425px) {
     .ab-bt {
-    padding: 10px 20px;
-    font-size: .9em;
-    margin: 8px auto;
-    width: 80%;
+        padding: 10px 20px;
+        font-size: .9em;
+        margin: 8px auto;
+        width: 80%;
     }
     .sub-3 {
         padding: 30px 20px;
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 1em;
-    line-height: 1.9;
-    word-break: keep-all;
-    letter-spacing: 1.5;
+        color: rgba(255, 255, 255, 0.808);
+        font-size: 1em;
+        line-height: 1.9;
+        word-break: keep-all;
+        letter-spacing: 1.5;
     }
+    .nk-header-title .nk-header-table-cell {
+        max-width: 425px !important;
+        border: 1px solid red;
+}
 }
 </style>
 

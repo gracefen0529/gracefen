@@ -4,7 +4,7 @@ let yStep = 10;
 let arcSize = 200;
 
 function setup(){
-  createCanvas(windowWidth,800)
+  createCanvas(windowWidth,windowHeight)
 	//設定麥克風接收音源
 	// mic = new p5.AudioIn()
 	// mic.start()	

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="tc">
+    <!-- 　　　　　　　　　　　　　　　　　　　　　 ＿＿＿＿＿
+    　　　　　　　　　　　　　　　　　　　　／
+    　 　　　　　　　　　　　　　　　　　　/　嗚嗚嗚請雇用我
+    　　　　　　　　　　　　　　　　　　∠
+    　　　　　　　　　　　 ∧＿∧　　　　＼＿＿＿__／￣￣￣￣￣
+    　　　　　　　　　　　（　 ´Д｀）　 ,-っ　　　　　　|　設計師ID：npeace77
+    　　　　　　　　　　／⌒ヽ/　　 / _）　　　　　　　＼
+    　　　　　　　　 　/　　 ＼＼／／　　　　　　　　　 ￣￣￣￣￣V￣￣￣￣￣￣
+    　　　　　　　 　 /　　　 /.＼／　　　　　　　　　‐=≡　　 ∧ ∧
+    　　　　　　　　 /　　　∧_二つ　　　　　　　　‐=≡　　　（　´Д｀）　ﾊｧﾊｧ　
+    　　　　　　 　 /　　　/　　　　　　　　　　　‐=≡＿＿＿__/　/＿
+    　　　　　　　 /　　　 ＼　　　　　　　　‐=≡　 /　.＿＿　　　゛　＼　　 .∩
+    　　　　　　　/　 /~＼　＼　　　　　  ‐=≡　　/　/　　/　　　 /＼ ＼ ／／
+    　　　　　　 /　 /　　　>　 ）　　　　‐=≡　　⊂_/　　/　　　 /　　.＼_／
+    　　　　　／　ノ　 　 /　／　　　　　　　‐=≡　　　　/　　　 /
+    　　　　/　／ 　 .　 / ./　　　　　　　　 ‐=≡　　　|　　＿|__
+    　　　 / ./　　　　 （　ヽ､　　　　　　　　   ‐=≡　　＼＿＿　＼
+    　　 （　 _)　　　　　＼__つ　　　　　　　　　　　‐=≡　/　／　／
+    　　　.￣　　　　　　　　　｀｀)　　　　　　　　　‐=≡　 /／　／
+    　　　　　　　　　　　　　　 ｀)⌒｀)　　　　　‐=≡　／　|　/
+    　　　　　　　　　　　　　　　 ;;;⌒｀)　　　 ‐=≡ ／　／レ
+    　　　　　　　　　　　　　　　;;⌒｀)⌒｀)‐=≡　（　　￣） -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Grace</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@1.3.4/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+   
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css'>
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <!-- END: Styles -->
+
+    <!-- <script src="assets/js/mySketch.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    
+
+
+
+
+</head>
+<style>
+.nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
+    color: #373b3f;
+    text-decoration: none;
+}
+
+.ab-top-sub {
+    color: #3c3a37 !important;
+    font-weight: 600 !important;
+    
+}
+
+.ab-sub {
+    color: #373a3c !important;
+    font-family: Work Sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#about {
+    padding: 0 0 50px 0;
+}
+
+.bb {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.ptpb {
+    padding: 20px 0;
+}
+
+.sr {
+    text-align: left;
+}
+
+.sr img {
+    max-width: 35%;
+}
+
+
+
+/*card*/
+
+.small {
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important
+}
+
+.card-header img {
+    border: 5px solid white !important
+}
+
+.outside {
+    position: absolute;
+}
+
+.card {
+    border-radius: 20px !important;
+    max-width:75rem;
+    margin-left: 25px;
+    border: none;
+}
+
+hr {
+    justify-content: center !important;
+    align-self: center !important;
+    width: 80%
+}
+
+.card-footer {
+    border-radius: 20px !important
+}
+
+.bold {
+    font-weight: 500
+}
+
+.margin-left {
+    margin-left: 30px !important
+}
+
+.banner-1 {
+  width: 100%;
+  z-index: -1;
+  margin-top: -55px;
+}
+
+.ab {
+    margin-top: 60px;
+}
+
+.ab-title {
+    font-weight: 900 !important;
+    font-size: 3rem;
+}
+
+.ab-left-title {
+    font-weight: 400 !important;
+    letter-spacing: .004em;
+    font-size: 28px;
+}
+
+.sl {
+    margin-top: -25px;
+}
+
+.ps-label{
+    font-size: 14px;
+    color: #6c757d!important;
+}
+
+.sk-nm{
+    font-size: 20px;
+    color: #000000!important;
+    margin: 0;
+    display: none;
+}
+
+.fa {
+    color: #6c757d!important;
+    /* color: #ff9900ce !important; */
+}
+
+.card-body {
+    padding: 0.5rem 3rem 2rem 3rem !important;
+}
+
+
+/* 設計工具 */
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  padding: 20px 20px 20px 0;
+}
+
+.grid-item {
+  padding: 4px;
+  font-size: 30px;
+  text-align: center;
+  /* filter: grayscale(30%) opacity(70%); */
+}
+
+.grid-item:hover {
+  filter: grayscale(0) opacity(100%);
+  transition: 0.3s;
+}
+
+.grid-item:hover > .sk-nm {
+  /* display: block; */
+}
+
+
+/* 服務項目 */
+.sv-grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 20px 20px 20px 0;
+}
+
+.sv-grid-item {
+  padding: 4px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sv-grid-item:hover {
+  filter: grayscale(0) opacity(100%);
+  transition: 0.3s;
+}
+
+.sv-grid-item:hover > .sk-nm {
+  /* display: block; */
+}
+
+.sv-p {
+    font-size: 14px;
+}
+
+/* .carousel::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0000002e;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+} */
+
+@media screen and (max-width:2560px) {
+    .banner-1 {
+        margin-top: 0;
+    }
+    .cd {
+        margin-top: -130px;
+    }
+    .outside {
+        left: -3%;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+}
+
+
+
+.id-bt {
+  transition: .5s;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: .6em;
+  margin-right: 8px;
+}
+
+
+/* @media screen and (max-width:1440px) {
+    .banner-1 {
+        margin-top: 0;
+    }
+    .cd {
+        margin-top: -130px;
+    }
+    .outside {
+        left: -3%;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+} */
+
+
+/* popup */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .outside {
+        left: -5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .cd-lf {
+        margin-left: 0;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .card {
+        width: unset !important;
+        margin-left: 0;
+    }
+
+    .outside {
+        position: relative;
+        left: 100px;
+    }
+    .cd-lf {
+        margin-left: 0;
+        text-align: center;
+    }
+    .card-header img {
+        width: 33%;
+    }
+}
+
+
+
+
+</style>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <!-- <script src="assets/js/header.js"></script> -->
+    <div  id="myDiv" class="animate-bottom">
+        <header class="nk-header">
+            <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="assets/images/logo.svg" alt="" width="85" class="nk-nav-logo-onscroll">
+                            <img src="assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                            <li><a href="work.html">設計專案</a></li>
+                            <li><a href="about.html">關於我</a></li>
+                            <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
+                        </ul>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon hidden-lg-up">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+                    <div class="nk-navbar-bg">
+                    </div>
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-header">
+                                    <div class="nk-nav-logo">
+                                    <a href="index.html" class="nk-nav-logo">
+                                            <img src="assets/images/logo-w.svg" alt="" width="85">
+                                        </a>
+                                    </div>
+                                    <div class="nk-nav-close nk-navbar-full-toggle">
+                                        <span class="nk-icon-close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row-full nk-nav-row">
+                            <div class="nano">
+                                <div class="nano-content" >
+                                    <div class="nk-nav-table">
+                                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                            <ul class="nk-nav">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-social">
+                                    <ul>
+                                        <li><a href="https://twitter.com/nkdevv"><i class=""></i></a></li>
+                                        <li><a href="https://www.facebook.com/unvabDIGITAL/"><i class=""></i></a></li>
+                                        <li><a href="https://dribbble.com/_nK"><i class=""></i></a></li>
+                                        <li><a href="https://www.instagram.com/unvab/"><i class=""></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+        <div class="nk-main">
+            <div class="nk-box bg-gray-1" id="about">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active banner">
+                                <video playsinline="" autoplay="" loop="" muted="" class="banner-1">
+                                    <source src="assets/images/test3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- card start -->
+                    <div class="container d-flex justify-content-center cd">
+                        <div class="flex-sm-row row justify-content-center b">
+                            <div class="col-auto mt-lg-0 ">
+                                <div class="card bxs">
+                                    <div class="card-header bg-white mt-4 border-0">
+                                        <div class="media "><img class="align-self-center rounded-circle outside img-fluid" src="assets/images/grace.jpg" width="70" height="70">
+                                            <div class="media-body my-auto cd-lf">
+                                                <p class="font-weight-bold mb-1" style="font-size: 20px;">Grace</p><small class="text-muted font-italic "><span class="dt-label">網頁設計</span><span class="dt-label">UI/UX</span><span class="dt-label">數位創作</span></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-sm-5 ">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="bold" style="margin: 0;">Hello！我是Grace，擁有4年的設計經驗，希望能透過自身所學，為客戶與公司達到雙贏的效果。
+                                                    <br>我擁有程式相關知識與介面設計的能力，重視每個設計環節與整合思考，熱愛研究並嘗試新的設計方法，規劃產品最大價值的可能。
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                    <div style="margin-top: 90px;"></div>
+                    <!-- 歷程介紹 -->
+                    <div class="ab abtime">
+                        <div class="row ptpb bb">
+                            <div class="sl">
+                                <!-- 滾輪 -->
+                                <div class="uk-section">
+                                    <div>
+                                        <div class="display-5" style="margin: 0;">過往經歷</div>
+                                        <span class="uk-sub display">Experience</span> 
+                                    </div>
+                                    <!-- 工作 -->
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div>
+                                                <div class="pl-15 pr-15">
+                                                    <div class="nk-blog-post">
+                                                        <h2 class="nk-post-title h5">Marketing Dept. UI/UX Intern</h2>
+                                                        
+                                                        <div class="nk-post-date">
+                                                            2022.4 - 2022.9
+                                                        </div>
+    
+                                                        <div class="nk-post-text">
+                                                            <i class="fa fa-briefcase"></i>
+                                                            <span class="ps-label">&nbsp;研華股份有限公司</span>
+                                                            <p class="mt-8" style="font-size: 14px;">• 協助整理企業內部Design System
+                                                                <br>• 實地廠間參訪，了解各產線廠長實務需求，擬定Dashboard設計方向
+                                                                <br>• 產線相關Dashboard規劃
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-gap-1"></div>
+                                            </div>
+                                        </div>
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">網頁設計師</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2020 - 2022
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-briefcase"></i>
+                                                        <span class="ps-label">&nbsp;寶鉅證券</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• 形象與活動網站設計與製作
+                                                            <br>• 臉書、Google廣告設計與投放
+                                                            <br>• 各式網站Banner製作
+                                                            <br>• 各式活動DM製作
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">UI/UX設計師</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2019 - 2020
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-briefcase"></i>
+                                                        <span class="ps-label">&nbsp;益向國際</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• EDM網站設計
+                                                            <br>• APP遊戲UI元件與UX流程設計
+                                                            <br>• 遊戲道具 ae動畫製作
+                                                            <br>• Google廣告設計
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">Branding Dept. Intern</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2019.2 - 2019.6
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-briefcase"></i>
+                                                        <span class="ps-label">&nbsp;網銀國際</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• 旗下電競團隊臉書廣告設計
+                                                            <br>• 企業形象簡報製作
+                                                            <br>• 企業專刊設計與修正
+                                                            <br>• 協助製作品牌部門企劃書</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    </div>
+                                        <div class="item">
+                                            <div>
+                                                <div class="pl-15 pr-15">
+                                                    <div class="nk-blog-post">
+                                                        <h2 class="nk-post-title h5">網頁設計師</h2>
+                                                        
+                                                        <div class="nk-post-date">
+                                                            2018.2 - 2018.10
+                                                        </div>
+
+                                                        <div class="nk-post-text">
+                                                            <i class="fa fa-briefcase"></i>
+                                                            <span class="ps-label">&nbsp;Shang-yu technology</span>
+                                                            <p class="mt-8" style="font-size: 14px;">• 與UI/UX設計師討論產品策略
+                                                                <br>• 協助維護線上網站
+                                                                <br>• 靜態EDM網站切版
+                                                                <br>• 各式Banner設計</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-gap-1"></div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <div class="pl-15 pr-15">
+                                                    <div class="nk-blog-post">
+                                                        <h2 class="nk-post-title h5">各式廣告與EDM網站製作</h2>
+                                                        
+                                                        <div class="nk-post-date">
+                                                            2017 - 2018
+                                                        </div>
+
+                                                        <div class="nk-post-text">
+                                                            <i class="fa fa-briefcase"></i>
+                                                            <span class="ps-label">&nbsp;flashaim.com</span>
+                                                            <p class="mt-8" style="font-size: 14px;">• Google廣告、FB及Line Lab廣告設計
+                                                                <br>• Line 粉絲團機器人選單設計
+                                                                <br>• 靜態EDM網站製作</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-gap-1"></div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="item">
+                                            <div>
+                                                <div class="pl-15 pr-15">
+                                                    <div class="nk-blog-post">
+                                                        <h2 class="nk-post-title h5">假日工讀 咖啡吧檯師</h2>
+                                                        
+                                                        <div class="nk-post-date">
+                                                            2016 - 2017
+                                                        </div>
+
+                                                        <div class="nk-post-text">
+                                                            <i class="fa fa-briefcase"></i>
+                                                            <span class="ps-label">&nbsp;11号倉庫</span>
+                                                            <p class="mt-8" style="font-size: 14px;">希望能精進咖啡相關知識與技能，豐富生活層次。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-gap-1"></div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 滾輪 --> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 教育歷程 -->
+                    <!-- <div class="ab abtime">
+                        <div class="row ptpb bb">
+                            <div class="sl">
+                                <div class="uk-section">
+                                    <div>
+                                        <div class="display-5" style="margin: 0;">教育歷程</div>
+                                        <span class="uk-sub display">Education</span> 
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">國立臺北科技大學</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2020 - 2022
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-graduation-cap"></i>
+                                                        <span class="ps-label">&nbsp;互動設計系 • 碩士在職專班</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• 虛擬實境相關之互動介面
+                                                            <br>• UI/UX介面設計
+                                                            <br>• 程式藝術、音樂編程製作
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">國立臺中科技大學</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2017 - 2020
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-graduation-cap"></i>
+                                                        <span class="ps-label">&nbsp;商業設計系 • 大學</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• 品牌商標設計
+                                                            <br>• Google、臉書相關廣告設計
+                                                            <br>• 海報、傳單設計
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <div class="pl-15 pr-15">
+                                                <div class="nk-blog-post">
+                                                    <h2 class="nk-post-title h5">私立復興高級商工</h2>
+                                                    
+                                                    <div class="nk-post-date">
+                                                        2012 - 2015
+                                                    </div>
+
+                                                    <div class="nk-post-text">
+                                                        <i class="fa fa-graduation-cap"></i>
+                                                        <span class="ps-label">&nbsp;美工科 • 高職</span>
+                                                        <p class="mt-8" style="font-size: 14px;">• 基礎繪畫技巧
+                                                            <br>• 影片拍攝、剪輯
+                                                            <br>• 文宣設計製作
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-gap-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> -->
+                    
+                    <div class="ab abskill">
+                        <div class="row ptpb bb">
+                            <div class="sl">
+                                <!-- 滾輪 -->
+                                <div class="uk-section">
+                                    <div>
+                                        <div class="display-5" style="margin: 0;">設計工具</div>
+                                        <span class="uk-sub display">Design Tools</span> 
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="grid-item">
+                                            <img src="assets/images/fig.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/ps.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/ai.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>  
+                                        <div class="grid-item">
+                                            <img src="assets/images/id.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/ae.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/sk.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>  
+                                        <div class="grid-item">
+                                            <img src="assets/images/zp.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/html.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                        <div class="grid-item">
+                                            <img src="assets/images/css.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>  
+                                        <div class="grid-item">
+                                            <img src="assets/images/js.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div> 
+                                        <div class="grid-item">
+                                            <img src="assets/images/p5.png" alt="">
+                                            <p class="sk-nm">name</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 滾輪 --> 
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="ab abservices">
+                        <div class="row ptpb ">
+                            <div class="sl">
+                                <div class="uk-section">
+                                    <div>
+                                        <div class="display-5" style="margin: 0;">服務項目</div>
+                                        <span class="uk-sub display">Services</span> 
+                                    </div>
+                                    <div class="sv-grid-container">
+                                        <div class="sv-grid-item">
+                                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                                            <h2 class="h5" style="margin-top: 20px">網站建置</h2>
+                                            <p class="sv-p">
+                                                服務包括：介面設計、內容佈局、程式建置、Banner設計
+                                            </p>
+                                        </div>
+                                        <div class="sv-grid-item">
+                                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                                            <h2 class="h5" style="margin-top: 20px">網頁設計師</h2>
+                                            <p class="sv-p">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                                        </div>
+                                        <div class="sv-grid-item">
+                                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                                            <h2 class="h5" style="margin-top: 20px">網頁設計師</h2>
+                                            <p class="sv-p">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                                        </div>
+                                        <div class="sv-grid-item">
+                                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                                            <h2 class="h5" style="margin-top: 20px">網頁設計師</h2>
+                                            <p class="sv-p">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="ab abidea">
+                        <div class="row ptpb ">
+                            <div class="sl">
+                                <div class="uk-section">
+                                    <div>
+                                        <div class="display-5" style="margin: 0;">價值理念</div>
+                                        <span class="uk-sub display">Core Values</span> 
+                                        <br>
+                                        <p class="mt-18 " style="font-size: 14px;">
+                                            網頁設計除肩負整體介面是否符合業主的行銷策略外，在網站正式上線前，也需多方考量功能開發與前後端技術是否能相互配合，而良好的設計不只是形式上的美，還必須能為客戶及使用者解決問題，帶來最大的實質效益，透過與團隊夥伴進行良性溝通，討論出最佳的設計方案。
+                                            <br><br>
+                                            除了設計師的身份外，同時我也是檔車愛好者，期許未來能完成機車露營的目標，你也對機車露營有興趣嗎？也許我們能一起聊聊 :)
+
+
+                                            <!-- <span id="myBtn" style="font-weight: 900;text-decoration: none;color: #000; cursor: pointer;">&nbsp;一起聊聊：）</span> -->
+                                            <br><br>
+                                            <img  class="wk-img"  src="assets/images/design-flow.png" alt="">
+                                            <!-- <button class="id-bt" onclick="location.href='about.html'">
+                                                歡迎與我聯繫
+                                            </button> -->
+                                            <div id="myModal" class="modal">
+
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                  <span class="close">&times;</span>
+                                                  <p>與我聯繫</p>
+                                                  <hr style="width: 100%;">
+                                                  <div class="phone">
+                                                      <i class="fas fa-mobile-alt"></i>
+                                                      +886 967290177
+                                                  </div>
+                                                </div>
+                                              
+                                              </div>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loader -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1500);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.opacity = "1";
+        }
+    </script>
+    <!-- popup  -->
+    <script>
+        // popup
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/b16edd2f39.js" crossorigin="anonymous"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- 滾輪 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script><script  src="assets/js/carousel.js"></script>
+</body>
+
+</html>

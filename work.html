@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="tc">
+    <!-- 　　　　　　　　　　　　　　　　　　　　　 ＿＿＿＿＿
+    　　　　　　　　　　　　　　　　　　　　／
+    　 　　　　　　　　　　　　　　　　　　/　嗚嗚嗚請雇用我
+    　　　　　　　　　　　　　　　　　　∠
+    　　　　　　　　　　　 ∧＿∧　　　　＼＿＿＿__／￣￣￣￣￣
+    　　　　　　　　　　　（　 ´Д｀）　 ,-っ　　　　　　|　設計師ID：npeace77
+    　　　　　　　　　　／⌒ヽ/　　 / _）　　　　　　　＼
+    　　　　　　　　 　/　　 ＼＼／／　　　　　　　　　 ￣￣￣￣￣V￣￣￣￣￣￣
+    　　　　　　　 　 /　　　 /.＼／　　　　　　　　　‐=≡　　 ∧ ∧
+    　　　　　　　　 /　　　∧_二つ　　　　　　　　‐=≡　　　（　´Д｀）　ﾊｧﾊｧ　
+    　　　　　　 　 /　　　/　　　　　　　　　　　‐=≡＿＿＿__/　/＿
+    　　　　　　　 /　　　 ＼　　　　　　　　‐=≡　 /　.＿＿　　　゛　＼　　 .∩
+    　　　　　　　/　 /~＼　＼　　　　　  ‐=≡　　/　/　　/　　　 /＼ ＼ ／／
+    　　　　　　 /　 /　　　>　 ）　　　　‐=≡　　⊂_/　　/　　　 /　　.＼_／
+    　　　　　／　ノ　 　 /　／　　　　　　　‐=≡　　　　/　　　 /
+    　　　　/　／ 　 .　 / ./　　　　　　　　 ‐=≡　　　|　　＿|__
+    　　　 / ./　　　　 （　ヽ､　　　　　　　　   ‐=≡　　＼＿＿　＼
+    　　 （　 _)　　　　　＼__つ　　　　　　　　　　　‐=≡　/　／　／
+    　　　.￣　　　　　　　　　｀｀)　　　　　　　　　‐=≡　 /／　／
+    　　　　　　　　　　　　　　 ｀)⌒｀)　　　　　‐=≡　／　|　/
+    　　　　　　　　　　　　　　　 ;;;⌒｀)　　　 ‐=≡ ／　／レ
+    　　　　　　　　　　　　　　　;;⌒｀)⌒｀)‐=≡　（　　￣） -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Grace Portfolio</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@1.3.4/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+   
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css'>
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <!-- END: Styles -->
+
+    <!-- <script src="assets/js/mySketch.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    
+
+
+
+
+</head>
+<style>
+.nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
+    color: #373b3f;
+    text-decoration: none;
+}
+
+.ab-top-sub {
+    color: #3c3a37 !important;
+    font-weight: 600 !important;
+    
+}
+
+.ab-sub {
+    color: #373a3c !important;
+    font-family: Work Sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#about {
+    padding: 0 0 50px 0;
+}
+
+.bb {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.ptpb {
+    padding: 20px 0;
+}
+
+.sr {
+    text-align: left;
+}
+
+.sr img {
+    max-width: 35%;
+}
+
+
+
+/*card*/
+
+.small {
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important
+}
+
+.card-header img {
+    border: 5px solid white !important
+}
+
+.outside {
+    position: absolute;
+}
+
+.card {
+    border-radius: 20px !important;
+    max-width:75rem;
+    margin-left: 25px;
+    border: none;
+}
+
+hr {
+    justify-content: center !important;
+    align-self: center !important;
+    width: 80%
+}
+
+.card-footer {
+    border-radius: 20px !important
+}
+
+.bold {
+    font-weight: 500
+}
+
+.margin-left {
+    margin-left: 30px !important
+}
+
+.banner-1 {
+  width: 100%;
+  z-index: -1;
+  margin-top: -55px;
+}
+
+.ab {
+    margin-top: 60px;
+}
+
+.ab-title {
+    font-weight: 900 !important;
+    font-size: 3rem;
+}
+
+.ab-left-title {
+    font-weight: 400 !important;
+    letter-spacing: .004em;
+    font-size: 28px;
+}
+
+.sl {
+    margin-top: -25px;
+}
+
+.ps-label{
+    font-size: 14px;
+    color: #6c757d!important;
+}
+
+.sk-nm{
+    font-size: 20px;
+    color: #000000!important;
+    margin: 0;
+    display: none;
+}
+
+
+.card-body {
+    padding: 0.5rem 3rem 2rem 3rem !important;
+}
+
+
+/* 設計工具 */
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  padding: 20px 20px 20px 0;
+}
+
+.grid-item {
+  padding: 4px;
+  font-size: 30px;
+  text-align: center;
+  filter: grayscale(30%) opacity(70%);
+}
+
+.grid-item:hover {
+  filter: grayscale(0) opacity(100%);
+  transition: 0.3s;
+}
+
+.grid-item:hover > .sk-nm {
+  /* display: block; */
+}
+
+
+/* 服務項目 */
+.sv-grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 20px 20px 20px 0;
+}
+
+.sv-grid-item {
+  padding: 4px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sv-grid-item:hover {
+  filter: grayscale(0) opacity(100%);
+  transition: 0.3s;
+}
+
+.sv-grid-item:hover > .sk-nm {
+  /* display: block; */
+}
+
+.sv-p {
+    font-size: 14px;
+}
+
+/* .carousel::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0000002e;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+} */
+
+@media screen and (max-width:2560px) {
+    .banner-1 {
+        margin-top: 0;
+    }
+    .cd {
+        margin-top: -130px;
+    }
+    .outside {
+        left: -3%;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+}
+
+
+
+.id-bt {
+  transition: .5s;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: .6em;
+  margin-right: 8px;
+}
+
+
+/* @media screen and (max-width:1440px) {
+    .banner-1 {
+        margin-top: 0;
+    }
+    .cd {
+        margin-top: -130px;
+    }
+    .outside {
+        left: -3%;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+} */
+
+
+/* popup */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mlr-4 {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.chip-small {
+    display: inline-block;
+    padding: 6px 8px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    font-size: 11px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nk-isotope-item {
+    box-shadow: 0;
+    border-radius: 8px;
+}
+
+.button-medium {
+    background-color: #000;
+    border-radius: 8px;
+    text-align: center;
+    height: 44px;
+    width: 100%;
+    color: #fff;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center !important;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    margin: 2px 0;
+}
+
+
+.project-info-card {
+    position: static;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    border-style: none;
+    border-radius: 8px;
+    display: none;
+}
+
+.project-info-card h4 {
+    margin: 3px 0;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+
+.project-info-card h6 {
+    margin: 0px 0 10px 0;
+    font-size: 18px;
+}
+
+
+.project-card-content {
+    border-radius: 8px;
+}
+
+.project-card__chip {
+    display: none;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+
+.project-card-content {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+.headline-3.mb8 {
+    margin: 8px 0 8px 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+@media screen and (max-width:768px) {
+    .outside {
+        left: -5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .cd-lf {
+        margin-left: 0;
+    }
+    .cd-lf {
+        margin-left: 30px;
+    }
+    .nk-isotope-item {
+    box-shadow: 0 4px 40px 0 rgb(0 0 0 / 18%);
+    margin-bottom: 10px;
+    }
+    .project-info-card {
+        display: block;
+    }
+    .nk-portfolio-list .nk-portfolio-item {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    }
+    .nk-portfolio-list .nk-portfolio-item.nk-portfolio-item-info-style-1 .nk-portfolio-item-info {
+        opacity: 0 !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .card {
+        width: unset !important;
+        margin-left: 0;
+    }
+
+    .outside {
+        position: relative;
+        left: 100px;
+    }
+    .cd-lf {
+        margin-left: 0;
+        text-align: center;
+    }
+    .card-header img {
+        width: 33%;
+    }
+}
+
+
+
+
+</style>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <!-- <script src="assets/js/header.js"></script> -->
+    <div  id="myDiv" class="animate-bottom">
+        <header class="nk-header">
+            <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="assets/images/logo.svg" alt="" width="85" class="nk-nav-logo-onscroll">
+                            <img src="assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                            <li><a href="work.html">設計專案</a></li>
+                            <li><a href="about.html">關於我</a></li>
+                            <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
+                        </ul>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon hidden-lg-up">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+                    <div class="nk-navbar-bg">
+                    </div>
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-header">
+                                    <div class="nk-nav-logo">
+                                    <a href="index.html" class="nk-nav-logo">
+                                            <img src="assets/images/logo-w.svg" alt="" width="85">
+                                        </a>
+                                    </div>
+                                    <div class="nk-nav-close nk-navbar-full-toggle">
+                                        <span class="nk-icon-close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row-full nk-nav-row">
+                            <div class="nano">
+                                <div class="nano-content">
+                                    <div class="nk-nav-table">
+                                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                            <ul class="nk-nav">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-social">
+                                    <ul>
+                                        <li><a href="https://twitter.com/nkdevv"><i class=""></i></a></li>
+                                        <li><a href="https://www.facebook.com/unvabDIGITAL/"><i class=""></i></a></li>
+                                        <li><a href="https://dribbble.com/_nK"><i class=""></i></a></li>
+                                        <li><a href="https://www.instagram.com/unvab/"><i class=""></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+        <div class="nk-main">
+            <div class="nk-box bg-white" id="projects">
+                <div class="nk-gap-4 mt-5"></div>
+        
+                <h2 class="text-xs-center display-4">設計專案</h2>
+        
+                <div class="nk-gap mnt-6"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <!-- <div class="text-xs-center">Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-main">
+        
+        
+        
+        
+                    <div class="container">
+                        <!-- START: Filter -->
+                        <div class="nk-pagination nk-pagination-nobg nk-pagination-center ">
+                            <!-- <a href="#nk-toggle-filter">
+                                <span class="nk-icon-squares"></span>
+                            </a> -->
+                        </div>
+                        <ul class="nk-isotope-filter nk-isotope-filter-active">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter="WEB">WEB</li>
+                            <li data-filter="APP">APP</li>
+                            <li data-filter="BANNER">BANNER</li>
+                            <li data-filter="Animation">Animation</li>
+                        </ul>
+                        <!-- END: Filter -->
+            
+                        <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
+            
+            
+                            <div class="nk-isotope-item" data-filter="WEB">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work1-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work1.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">Venus Amour 戀愛女神</h2>
+                                            <div class="portfolio-item-category">WEB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">WEB</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">Venus Amour 戀愛女神</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">使香水如同外衣般，提升生活與品味</h6>
+                                        
+                                        <button onclick="location.href='work1-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="nk-isotope-item" data-filter="APP,WEB">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work4-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work4.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">緣來</h2>
+                                            <div class="portfolio-item-category">APP</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">APP</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">緣來</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">解人生百惑，結四方福緣</h6>
+                                        <button onclick="location.href='work4-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="nk-isotope-item" data-filter="WEB">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work2-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work2.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">Mamaway 媽媽餵</h2>
+                                            <div class="portfolio-item-category">WEB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">WEB</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">Mamaway 媽媽餵</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">最了解媽媽的好幫手</h6>
+                                        
+                                        <button onclick="location.href='work2-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="nk-isotope-item" data-filter="Animation">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work7-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work7.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">Animation Collections</h2>
+                                            <div class="portfolio-item-category">Animation</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">Animation</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">Animation Collections</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">數位創作練習</h6>
+                                        
+                                        <button onclick="location.href='work7-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+        
+                            <div class="nk-isotope-item" data-filter="BANNER">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work5-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work5.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">Wanin International 網銀國際</h2>
+                                            <div class="portfolio-item-category">Banner</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">Banner</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">Wanin International 網銀國際</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">實習作品集</h6>
+                                        
+                                        <button onclick="location.href='work5-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="nk-isotope-item" data-filter="BANNER,APP,WEB">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work6-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work6.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">Pcsfg 寶鉅證券</h2>
+                                            <div class="portfolio-item-category">APP</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-card" style="">
+                                    <div class="project-card-content">
+                                        <small class="text-muted font-italic ">
+                                            <span class="dt-label">WEB</span>
+                                        </small>
+                                        <h4 class="headline-5 text-800 m-b-16 weight-medium">Pcsfg 寶鉅證券</h4>
+                                        <h6 class="headline-5 text-800 m-b-16 weight-medium">一站式跨境理財，在線專屬客戶經理</h6>
+                                        
+                                        <button onclick="location.href='work6-single.html'" class="button-medium button-full-width w-button">查看詳情</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- <div class="nk-isotope-item" data-filter="WEB">
+                                <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                                    <a href="work3-single.html" class="nk-portfolio-item-link"></a>
+                                    <div class="nk-portfolio-item-image">
+                                        <div style="background-image: url('assets/images/work/work3.jpg');"></div>
+                                    </div>
+                                    <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                        <div>
+                                            <h2 class="portfolio-item-title h3">BuddyBuddy</h2>
+                                            <div class="portfolio-item-category">WEB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="nk-gap-4"></div>
+                    </div>
+        
+            
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loader -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1500);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.opacity = "1";
+        }
+    </script>
+    <!-- popup  -->
+    <script>
+        // popup
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/b16edd2f39.js" crossorigin="anonymous"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- 滾輪 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script><script  src="assets/js/carousel.js"></script>
+</body>
+
+</html>

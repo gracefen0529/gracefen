@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tc">
+    <!-- 　　　　　　　　　　　　　　　　　　　　　 ＿＿＿＿＿
+    　　　　　　　　　　　　　　　　　　　　／
+    　 　　　　　　　　　　　　　　　　　　/　嗚嗚嗚請雇用我
+    　　　　　　　　　　　　　　　　　　∠
+    　　　　　　　　　　　 ∧＿∧　　　　＼＿＿＿__／￣￣￣￣￣
+    　　　　　　　　　　　（　 ´Д｀）　 ,-っ　　　　　　|　設計師ID：npeace77
+    　　　　　　　　　　／⌒ヽ/　　 / _）　　　　　　　＼
+    　　　　　　　　 　/　　 ＼＼／／　　　　　　　　　 ￣￣￣￣￣V￣￣￣￣￣￣
+    　　　　　　　 　 /　　　 /.＼／　　　　　　　　　‐=≡　　 ∧ ∧
+    　　　　　　　　 /　　　∧_二つ　　　　　　　　‐=≡　　　（　´Д｀）　ﾊｧﾊｧ　
+    　　　　　　 　 /　　　/　　　　　　　　　　　‐=≡＿＿＿__/　/＿
+    　　　　　　　 /　　　 ＼　　　　　　　　‐=≡　 /　.＿＿　　　゛　＼　　 .∩
+    　　　　　　　/　 /~＼　＼　　　　　  ‐=≡　　/　/　　/　　　 /＼ ＼ ／／
+    　　　　　　 /　 /　　　>　 ）　　　　‐=≡　　⊂_/　　/　　　 /　　.＼_／
+    　　　　　／　ノ　 　 /　／　　　　　　　‐=≡　　　　/　　　 /
+    　　　　/　／ 　 .　 / ./　　　　　　　　 ‐=≡　　　|　　＿|__
+    　　　 / ./　　　　 （　ヽ､　　　　　　　　   ‐=≡　　＼＿＿　＼
+    　　 （　 _)　　　　　＼__つ　　　　　　　　　　　‐=≡　/　／　／
+    　　　.￣　　　　　　　　　｀｀)　　　　　　　　　‐=≡　 /／　／
+    　　　　　　　　　　　　　　 ｀)⌒｀)　　　　　‐=≡　／　|　/
+    　　　　　　　　　　　　　　　 ;;;⌒｀)　　　 ‐=≡ ／　／レ
+    　　　　　　　　　　　　　　　;;⌒｀)⌒｀)‐=≡　（　　￣） -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Grace Portfolio</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- END: Styles -->
+
+    <!-- <script src="assets/js/mySketch.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<style>
+
+.cp {
+    color: #5f5f5f;
+}
+.nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
+    color: #373b3f;
+    text-decoration: none;
+}
+.display-4 {
+    font-size: 2.6rem;
+}
+
+
+
+@media screen and (max-width:2560px) {
+    .nk-img {
+        background-image: url("assets/images/work/b-work6.jpg");
+        height: 585px;
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .nk-img {
+        background-image: url("assets/images/work/work6.jpg");
+        height: 420px;
+        background-size: contain;
+    }
+}
+@media screen and (max-width:425px) {
+    .nk-img {
+        height: 375px;
+    }
+}
+
+</style>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <!-- <script src="assets/js/header.js"></script> -->
+    <div  id="myDiv" class="animate-bottom">
+        <header class="nk-header">
+            <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="assets/images/logo.svg" alt="" width="85" class="nk-nav-logo-onscroll">
+                            <img src="assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                            <li><a href="work.html">設計專案</a></li>
+                            <li><a href="about.html">關於我</a></li>
+                            <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
+                        </ul>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon hidden-lg-up">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+                    <div class="nk-navbar-bg">
+                    </div>
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-header">
+                                    <div class="nk-nav-logo">
+                                    <a href="index.html" class="nk-nav-logo">
+                                            <img src="assets/images/logo-w.svg" alt="" width="85">
+                                        </a>
+                                    </div>
+                                    <div class="nk-nav-close nk-navbar-full-toggle">
+                                        <span class="nk-icon-close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row-full nk-nav-row">
+                            <div class="nano">
+                                <div class="nano-content">
+                                    <div class="nk-nav-table">
+                                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                            <ul class="nk-nav">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-social">
+                                    <ul>
+                                        <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/unvabDIGITAL/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+            <div class="nk-main">
+                <!-- <img class="nk-img-fit" src="assets/images/work/b-work1.jpg"> -->
+                <div class="nk-img nk-img-fit"></div>
+                <div class="container">
+                    <div class="nk-portfolio-single">
+                        <div class="nk-gap-1 mb-14"></div>
+                        <!-- <h1 class="nk-portfolio-title display-4">Banner Collection</h1> -->
+                        <div class="row vertical-gap">
+                            <div class="col-lg-12">
+                                <div class="nk-portfolio-info">
+                                    <div class="nk-portfolio-text">
+                                        <table class="nk-portfolio-details col-lg-12">
+                                            <tr  class="col-lg-7">
+                                                <td>
+                                                    <p style="font-size: 28px;font-weight: bold;">Banner Collection</p>
+                                                </td>
+                                            </tr>
+                                            <tr  class="col-lg-5" style="font-size: 16px;">
+                                                <td>
+                                                    <p> 
+                                                        <span style="font-weight: bold;">專案時間</span>&nbsp;&nbsp;&nbsp;&nbsp;2021.9
+                                                        <br>    
+                                                        <span style="font-weight: bold;">負責項目</span>&nbsp;&nbsp;&nbsp;&nbsp;流程規劃、視覺/動畫設計、企劃發想
+                                                        <br>
+                                                        <span style="font-weight: bold;">使用工具</span>&nbsp;&nbsp;&nbsp;&nbsp;Photoshop、Illustrator、Figma、Html、Css、
+                                                        
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con">
+                                <img class="wk-img" src="assets/images/work/pcsfg-01.jpg" alt="">
+                                <span class="bt">品牌介紹</span>
+                                <div class="bt-cnt">鉅‧視界APP 專為寶鉅證券客戶所研發，除了擁有基本帳戶查詢功能，也能與其他客戶進行商業趨勢上的交流。</div>
+
+                                <span class="bt">產品目標</span>
+                                <div class="bt-cnt">現有金融APP皆以功能開發取向，希望能在功能面之外，也能吸引客戶點擊增加產品黏著度。</div>
+
+                                <span class="bt">設計概念</span>
+                                <div class="bt-cnt">
+                                    <ul>
+                                        <li>Logo保留原設計維持品牌統一性，依照客戶需求新增股票樣式</li>
+                                        <li>整體設計保留原品牌色系，新增品牌影片區，提升影片曝光度。</li>
+                                        <li>除了設有主題專欄，使用者也可自行發表文章開啟話題。</li>
+                                        <li>文章設有追蹤、點讚與留言功能，使用者可彼此互動。</li>
+                                    </ul>
+                                </div>
+                                <img class="wk-img" src="assets/images/work/pcsfg-02.jpg" alt="">
+                                
+                                <br>
+                                <span class="bt">問題與挑戰</span>
+                                <div class="bt-cnt">該品牌為首次開發APP，此次開發需優化的部分為：
+                                    <ul>
+                                        <li>軟體開發的前置作業需進行更多的現有資源與技術需求釐清，並讓開發團隊理解行銷團隊的設計訴求，因此非常講究行銷團隊與工程團隊的有效溝通。</li>
+                                        <li>在規劃產品的附加功能前，需確保主要功能的成熟度是否有達到目標客群的最低需求，才能有效留住使用者，附加的價值才能體現。</li>
+                                        <li>開發前需與團隊們確保品牌的核心方向，並定期開會檢視產品現況提出問題點，確認軟體現況的發展定位是否符合預期，必要時需進行彈性調整。</li>
+                                    </ul>
+                                下圖為依據團隊需求設計(非定案)版本Prototype，此功能尚未完全開發，僅供點擊檢視流程：
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin: 10px 0 35px 0;" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzaMVeyysf47bgoLrRxyMDy%2FPCSFG-APP%3Fpage-id%3D344%253A896%26node-id%3D2696%253A924%26viewport%3D241%252C48%252C0.2%26scaling%3Dscale-down%26starting-point-node-id%3D2696%253A924" allowfullscreen></iframe>
+
+                                <span class="bt">相關視覺項目</span>
+                                <div class="bt-cnt">除了設計網站與APP介面之外，同時負責相關Banner與DM文宣。</div>
+                                <img class="wk-img" src="assets/images/work/pcsfg-03.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="nk-gap-4 mt-14"></div>
+        
+                    </div>
+                </div>
+        
+                
+        
+                <!-- START: Pagination -->
+                <div class="nk-pagination nk-pagination-center">
+                    <div class="container">
+                        <a class="nk-pagination-prev" href="work7-single.html">
+                            <span class="pe-7s-angle-left"></span> Previous Work</a>
+                        <a class="nk-pagination-center" href="work.html">
+                            <span class="nk-icon-squares"></span>
+                        </a>
+                        <a class="nk-pagination-next" href="work6-single.html">Next Work <span class="pe-7s-angle-right"></span> </a>
+                    </div>
+                </div>
+                <!-- END: Pagination -->
+            </div>
+    </div>
+    <!-- loader -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1500);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.opacity = "1";
+        }
+    </script>
+    <!-- popup  -->
+    <script>
+        // popup
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/b16edd2f39.js" crossorigin="anonymous"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- 滾輪 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script><script  src="assets/js/carousel.js"></script>
+</body>
+
+</html>

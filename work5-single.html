@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tc">
+    <!-- 　　　　　　　　　　　　　　　　　　　　　 ＿＿＿＿＿
+    　　　　　　　　　　　　　　　　　　　　／
+    　 　　　　　　　　　　　　　　　　　　/　嗚嗚嗚請雇用我
+    　　　　　　　　　　　　　　　　　　∠
+    　　　　　　　　　　　 ∧＿∧　　　　＼＿＿＿__／￣￣￣￣￣
+    　　　　　　　　　　　（　 ´Д｀）　 ,-っ　　　　　　|　設計師ID：npeace77
+    　　　　　　　　　　／⌒ヽ/　　 / _）　　　　　　　＼
+    　　　　　　　　 　/　　 ＼＼／／　　　　　　　　　 ￣￣￣￣￣V￣￣￣￣￣￣
+    　　　　　　　 　 /　　　 /.＼／　　　　　　　　　‐=≡　　 ∧ ∧
+    　　　　　　　　 /　　　∧_二つ　　　　　　　　‐=≡　　　（　´Д｀）　ﾊｧﾊｧ　
+    　　　　　　 　 /　　　/　　　　　　　　　　　‐=≡＿＿＿__/　/＿
+    　　　　　　　 /　　　 ＼　　　　　　　　‐=≡　 /　.＿＿　　　゛　＼　　 .∩
+    　　　　　　　/　 /~＼　＼　　　　　  ‐=≡　　/　/　　/　　　 /＼ ＼ ／／
+    　　　　　　 /　 /　　　>　 ）　　　　‐=≡　　⊂_/　　/　　　 /　　.＼_／
+    　　　　　／　ノ　 　 /　／　　　　　　　‐=≡　　　　/　　　 /
+    　　　　/　／ 　 .　 / ./　　　　　　　　 ‐=≡　　　|　　＿|__
+    　　　 / ./　　　　 （　ヽ､　　　　　　　　   ‐=≡　　＼＿＿　＼
+    　　 （　 _)　　　　　＼__つ　　　　　　　　　　　‐=≡　/　／　／
+    　　　.￣　　　　　　　　　｀｀)　　　　　　　　　‐=≡　 /／　／
+    　　　　　　　　　　　　　　 ｀)⌒｀)　　　　　‐=≡　／　|　/
+    　　　　　　　　　　　　　　　 ;;;⌒｀)　　　 ‐=≡ ／　／レ
+    　　　　　　　　　　　　　　　;;⌒｀)⌒｀)‐=≡　（　　￣） -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Grace Portfolio</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- END: Styles -->
+
+    <!-- <script src="assets/js/mySketch.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<style>
+
+.cp {
+    color: #5f5f5f;
+}
+.nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
+    color: #373b3f;
+    text-decoration: none;
+}
+.display-4 {
+    font-size: 2.6rem;
+}
+
+.con, .col-lg-7, .col-lg-12, .col-lg-5 {
+    padding: 0;
+}
+
+
+@media screen and (max-width:2560px) {
+    .nk-img {
+        background-image: url("assets/images/work/b-work5.jpg");
+        height: 585px;
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .nk-img {
+        background-image: url("assets/images/work/work5.jpg");
+        height: 420px;
+        background-size: contain;
+    }
+}
+@media screen and (max-width:425px) {
+    .nk-img {
+        height: 375px;
+    }
+}
+
+</style>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <!-- <script src="assets/js/header.js"></script> -->
+    <div  id="myDiv" class="animate-bottom">
+        <header class="nk-header">
+            <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="assets/images/logo.svg" alt="" width="85" class="nk-nav-logo-onscroll">
+                            <img src="assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                            <li><a href="work.html">設計專案</a></li>
+                            <li><a href="about.html">關於我</a></li>
+                            <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
+                        </ul>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon hidden-lg-up">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+                    <div class="nk-navbar-bg">
+                    </div>
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-header">
+                                    <div class="nk-nav-logo">
+                                    <a href="index.html" class="nk-nav-logo">
+                                            <img src="assets/images/logo-w.svg" alt="" width="85">
+                                        </a>
+                                    </div>
+                                    <div class="nk-nav-close nk-navbar-full-toggle">
+                                        <span class="nk-icon-close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row-full nk-nav-row">
+                            <div class="nano">
+                                <div class="nano-content">
+                                    <div class="nk-nav-table">
+                                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                            <ul class="nk-nav">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-social">
+                                    <ul>
+                                        <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/unvabDIGITAL/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+            <div class="nk-main">
+                <!-- <img class="nk-img-fit" src="assets/images/work/b-work1.jpg"> -->
+                <div class="nk-img nk-img-fit"></div>
+                <div class="container">
+                    <div class="nk-portfolio-single">
+                        <div class="nk-gap-1 mb-14"></div>
+                        <!-- <h1 class="nk-portfolio-title display-4">Mamaway</h1> -->
+                        <div class="row vertical-gap">
+                            <div class="col-lg-12">
+                                <div class="nk-portfolio-info">
+                                    <div class="nk-portfolio-text">
+                                        <table class="nk-portfolio-details col-lg-12">
+                                            <tr  class="col-lg-7">
+                                                <td>
+                                                    <p style="font-size: 28px;font-weight: bold;">Wanin International 網銀國際</p>
+                                                </td>
+                                            </tr>
+                                            <tr  class="col-lg-5" style="font-size: 16px;">
+                                                <td>
+                                                    <p> 
+                                                        <span style="font-weight: bold;">專案時間</span>&nbsp;&nbsp;&nbsp;&nbsp;2019.6
+                                                        <br>    
+                                                        <span style="font-weight: bold;">負責項目</span>&nbsp;&nbsp;&nbsp;&nbsp;視覺設計
+                                                        <br>    
+                                                        <span style="font-weight: bold;">使用工具</span>&nbsp;&nbsp;&nbsp;&nbsp;Photoshop、Illustrator、After Effect
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con">
+                                <img class="wk-img" src="assets/images/work/wn-02.jpg" alt="">
+                                <span class="bt">品牌介紹</span>
+                                <div class="bt-cnt">網銀國際是位於台中的遊戲研發公司，旗下擁有閃電狼電子競技職業隊，為全亞洲具代表性的遊戲公司之一。</div>
+
+                                <span class="bt">實習內容</span>
+                                <div class="bt-cnt">於大學期間為期四個月的實習內容：
+                                    <ul>
+                                        <li>負責公司旗下電競團隊設計臉書廣告與投放。</li>
+                                        <li>公司企業簡介、企業專刊設計與修正。</li>
+                                        <li>協助製作品牌部門企劃書。</li>
+                                        <li>透過實習空擋，自學Adobe After Effects，協助公司製作臉書動畫。</li>
+                                    </ul>
+                                </div>
+
+                                <span class="bt">問題與挑戰</span>
+                                <div class="bt-cnt">在實習初期迎來的第一個挑戰：為即將上市的APP設計LOGO，該APP功能為區塊鏈錢包，希望能從Logo看出品牌目的以及與人連結的意向。
+                                    <br>
+                                    接著經過一系列不同功能取向的產品設計，如：期刊插畫編排、產品使用手冊、企業形象簡報、閃電狼形象海報等，這些挑戰讓我學習如何掌握品牌調性，進而融入不同功能的周邊文宣中，大大提升如何尋找及區分關鍵資源，並為資料進行重點分類，對於往後的設計流程擁有非常大的幫助，非常感謝各位前輩不吝給予建議與機會，是非常珍貴的學習經驗。
+                                </div>
+                                <img class="wk-img" src="assets/images/work/wn-01.jpeg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="nk-gap-4 mt-14"></div>
+        
+                    </div>
+                </div>
+        
+                
+        
+                <!-- START: Pagination -->
+                <div class="nk-pagination nk-pagination-center">
+                    <div class="container">
+                        <a class="nk-pagination-prev" href="work7-single.html">
+                            <span class="pe-7s-angle-left"></span> Previous Work</a>
+                        <a class="nk-pagination-center" href="work.html">
+                            <span class="nk-icon-squares"></span>
+                        </a>
+                        <a class="nk-pagination-next" href="work6-single.html">Next Work <span class="pe-7s-angle-right"></span> </a>
+                    </div>
+                </div>
+                <!-- END: Pagination -->
+            </div>
+    </div>
+    <!-- loader -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1500);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.opacity = "1";
+        }
+    </script>
+    <!-- popup  -->
+    <script>
+        // popup
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/b16edd2f39.js" crossorigin="anonymous"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- 滾輪 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script><script  src="assets/js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tc">
+    <!-- 　　　　　　　　　　　　　　　　　　　　　 ＿＿＿＿＿
+    　　　　　　　　　　　　　　　　　　　　／
+    　 　　　　　　　　　　　　　　　　　　/　嗚嗚嗚請雇用我
+    　　　　　　　　　　　　　　　　　　∠
+    　　　　　　　　　　　 ∧＿∧　　　　＼＿＿＿__／￣￣￣￣￣
+    　　　　　　　　　　　（　 ´Д｀）　 ,-っ　　　　　　|　設計師ID：npeace77
+    　　　　　　　　　　／⌒ヽ/　　 / _）　　　　　　　＼
+    　　　　　　　　 　/　　 ＼＼／／　　　　　　　　　 ￣￣￣￣￣V￣￣￣￣￣￣
+    　　　　　　　 　 /　　　 /.＼／　　　　　　　　　‐=≡　　 ∧ ∧
+    　　　　　　　　 /　　　∧_二つ　　　　　　　　‐=≡　　　（　´Д｀）　ﾊｧﾊｧ　
+    　　　　　　 　 /　　　/　　　　　　　　　　　‐=≡＿＿＿__/　/＿
+    　　　　　　　 /　　　 ＼　　　　　　　　‐=≡　 /　.＿＿　　　゛　＼　　 .∩
+    　　　　　　　/　 /~＼　＼　　　　　  ‐=≡　　/　/　　/　　　 /＼ ＼ ／／
+    　　　　　　 /　 /　　　>　 ）　　　　‐=≡　　⊂_/　　/　　　 /　　.＼_／
+    　　　　　／　ノ　 　 /　／　　　　　　　‐=≡　　　　/　　　 /
+    　　　　/　／ 　 .　 / ./　　　　　　　　 ‐=≡　　　|　　＿|__
+    　　　 / ./　　　　 （　ヽ､　　　　　　　　   ‐=≡　　＼＿＿　＼
+    　　 （　 _)　　　　　＼__つ　　　　　　　　　　　‐=≡　/　／　／
+    　　　.￣　　　　　　　　　｀｀)　　　　　　　　　‐=≡　 /／　／
+    　　　　　　　　　　　　　　 ｀)⌒｀)　　　　　‐=≡　／　|　/
+    　　　　　　　　　　　　　　　 ;;;⌒｀)　　　 ‐=≡ ／　／レ
+    　　　　　　　　　　　　　　　;;⌒｀)⌒｀)‐=≡　（　　￣） -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Grace</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- END: Styles -->
+
+    <!-- <script src="assets/js/mySketch.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@v1.3.1/lib/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<style>
+
+.cp {
+    color: #5f5f5f;
+}
+.nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
+    color: #373b3f;
+    text-decoration: none;
+}
+.display-4 {
+    font-size: 2.6rem;
+}
+
+
+
+@media screen and (max-width:2560px) {
+    .nk-img {
+        background-image: url("assets/images/work/b-work4.jpg");
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .vertical-gap {
+        flex-direction: column-reverse;
+
+    }
+}
+
+</style>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <!-- <script src="assets/js/header.js"></script> -->
+    <div  id="myDiv" class="animate-bottom">
+        <header class="nk-header">
+            <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="assets/images/logo.svg" alt="" width="85" class="nk-nav-logo-onscroll">
+                            <img src="assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                            <li><a href="work.html">設計專案</a></li>
+                            <li><a href="about.html">關於我</a></li>
+                            <li class="dw-bt"><a href="assets/images/朱倩沂_自傳_2022.jpg" download="朱倩沂_自傳_2022.jpg">下載履歷</a></li>\
+                        </ul>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon hidden-lg-up">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+                    <div class="nk-navbar-bg">
+                    </div>
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-header">
+                                    <div class="nk-nav-logo">
+                                    <a href="index.html" class="nk-nav-logo">
+                                            <img src="assets/images/logo-w.svg" alt="" width="85">
+                                        </a>
+                                    </div>
+                                    <div class="nk-nav-close nk-navbar-full-toggle">
+                                        <span class="nk-icon-close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row-full nk-nav-row">
+                            <div class="nano">
+                                <div class="nano-content">
+                                    <div class="nk-nav-table">
+                                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                            <ul class="nk-nav">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nk-nav-row">
+                            <div class="container">
+                                <div class="nk-nav-social">
+                                    <ul>
+                                        <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/unvabDIGITAL/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+            <div class="nk-main">
+                <!-- <img class="nk-img-fit" src="assets/images/work/b-work1.jpg"> -->
+                <div class="nk-img nk-img-fit"></div>
+                <div class="container">
+                    <div class="nk-portfolio-single">
+                        <div class="nk-gap-1 mb-14"></div>
+                        <h1 class="nk-portfolio-title display-4">緣來</h1>
+                        <div class="row vertical-gap">
+                            <div class="">
+                                <div class="nk-portfolio-info">
+                                    <div class="nk-portfolio-text">
+                                        <!-- <p class="cp">Nullam lobortis neque turpis, nec tempus sem pharetra at. Donec et quam, ullamcorper velit. Aliquam maximus ullamcorper ligula, at placerat dui hendrerit sed. Sed metus urna, bibendum id tortor, feugiat ipsum. Aliquam vehicula neque sit amet dolor malesuada pretium.</p> -->
+                                        <!-- <div class="">
+                                            <table class="nk-portfolio-details">
+                                                <tr>
+                                                    <td>
+                                                        <strong>專案名稱</strong>
+                                                    </td>
+                                                    <td>VenusAmour 戀愛女神</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>專案時間</strong>
+                                                    </td>
+                                                    <td>2018.03.28</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>負責項目</strong>
+                                                    </td>
+                                                    <td>
+                                                        視覺設計
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div> -->
+                                        <div class="wk-img">
+                                            
+                                            <img src="assets/images/work/uan-01.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active banner">
+                                                <video playsinline="" autoplay="" loop="" muted="" class="banner-1" style="width: 100%;">
+                                                    <source src="assets/images/work/una-an01.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="nk-gap-4 mt-14"></div>
+        
+                    </div>
+                </div>
+        
+                
+        
+                <!-- START: Pagination -->
+                <div class="nk-pagination nk-pagination-center">
+                    <div class="container">
+                        <a class="nk-pagination-prev" href="#">
+                            <span class="pe-7s-angle-left"></span> Previous Work</a>
+                        <a class="nk-pagination-center" href="#">
+                            <span class="nk-icon-squares"></span>
+                        </a>
+                        <a class="nk-pagination-next" href="#">Next Work <span class="pe-7s-angle-right"></span> </a>
+                    </div>
+                </div>
+                <!-- END: Pagination -->
+            </div>
+    </div>
+    <!-- loader -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1500);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.opacity = "1";
+        }
+    </script>
+    <!-- popup  -->
+    <script>
+        // popup
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/combined.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- 滾輪 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script><script  src="assets/js/carousel.js"></script>
+</body>
+
+</html>
